@@ -4,11 +4,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prestart": "ng build --prod && ngc",
+    "start": "ts-node src/server.ts"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "@angular/http": "^4.0.2",
     "@angular/platform-browser": "^4.0.2",
     "@angular/platform-browser-dynamic": "^4.0.2",
+    "@angular/platform-server": "^4.1.3",
     "@angular/router": "^4.0.2",
     "core-js": "^2.4.1",
     "bootstrap": "^3.3.7",
