@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+// todo 这个已经过时了, 而且有无用的东西
+// todo 有一些不应该有的导入
 import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs';
 import { map, catchError } from "rxjs/operators";
